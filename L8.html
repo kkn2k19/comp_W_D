@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h2>This is HTML forms tutorial.</h2>
+    <form action="backend.php">
+        <!--div tag used instead of br tag just to make differnt divisions.-->
+        <!--label tag used to give label to a single div of form-->
+        <label for="name">Name</label>
+        <div>
+            <input type="text" name="myName" id="name">
+        </div>
+        <br><!--don't use br here just used to make a space-->
+        <div>
+            Role: <input type="text" name="myRole">
+        </div>
+        <br><!--don't use br,  here just used to make a space-->
+        <div>
+            Email: <input type="email" name="myEmail">
+            <!--name is used to identify that email is stored as myEmail in the backend-->
+        </div>
+        <br>
+        <!--in number type we can give numbers and e to have a number power of 10-->
+        <div>
+            Date: <input type="date" name="myDate">
+        </div>
+        <br>
+        <div>
+            Bonus: <input type="number" name="myBonus">
+        </div>
+        <br>
+        <label for="eligible">Are you eligible?</label>
+        <div>
+            <input type="checkbox" name="myEligibility" id="eligible">
+            <!-- Are you eligible?: <input type="checkbox" name="myEligibility" checked>checked used to make it tick bydefault -->
+        </div>
+        <br>
+        <div>
+            Gender: Male<input type="radio" name="myGender"> Female <input type="radio" name="myGender"> Other <input
+                type="radio" name="myGender">
+        </div>
+        <br>
+        <div>
+            Write about Yourself: <br><textarea name="myText" cols="30" rows="10"></textarea>
+        </div>
+        <br><!--select tag used to make a form to get options to select--><!--selected is used to give it as default selected one-->
+        <div>
+            <label for="car">Car</label>
+            <select name="myCar" id="car">
+                <option value="ind">Indica</option>
+                <option value="swf" selected>Swift</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+            <!--reset is used to clear all the filled places-->
+        </div>
+        <!--<p>Here when we click submit it will display an error, as we dont have a backend</p>-->
+
+    </form>
+</body>
+
+</html>
